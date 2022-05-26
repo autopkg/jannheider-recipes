@@ -12,6 +12,7 @@ supported_architectures for Intel based: x86_64
 supported_architectures for Apple silicon: arm64
 
 Our best practice is to make 2 sepereatet munki override
+
 Intel based:
 ```
 autopkg make-override 1PasswordLatest.munki -n 1PasswordLatest-x86.munki
