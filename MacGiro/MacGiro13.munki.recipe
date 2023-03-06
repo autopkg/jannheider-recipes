@@ -3,32 +3,33 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of MacGiro 12 and imports it into Munki.</string>
+	<string>Downloads the latest version of MacGiro 13 and imports it into Munki.</string>
 	<key>Identifier</key>
-	<string>com.github.jannheider.munki.MacGiro12</string>
+	<string>com.github.jannheider.munki.MacGiro13</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
-		<string>MacGiro 12</string>
+		<string>MacGiro 13</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>blocking_applications</key>
 			<array>
+				<string>QRSepaCodeHelper.app</string>
+				<string>MacGiro 13.app</string>
 				<string>MacGiroMemo.app</string>
-				<string>MacGiro 12.app</string>
 			</array>
 			<key>catalogs</key>
 			<array>
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>MacGiro Homebanking</string>
+			<string></string>
 			<key>developer</key>
 			<string>med-i-bit GmbH</string>
 			<key>display_name</key>
-			<string>MacGiro 12</string>
+			<string>MacGiro 13</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
@@ -38,7 +39,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.jannheider.download.MacGiro12</string>
+	<string>com.github.jannheider.download.MacGiro13</string>
 	<key>Process</key>
 	<array>
 		<dict>
