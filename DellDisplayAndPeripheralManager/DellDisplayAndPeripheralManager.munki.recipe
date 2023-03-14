@@ -48,6 +48,7 @@ else
 fi
 
 exit 0
+</string>
 		</dict>
 	</dict>
 	<key>MinimumVersion</key>
