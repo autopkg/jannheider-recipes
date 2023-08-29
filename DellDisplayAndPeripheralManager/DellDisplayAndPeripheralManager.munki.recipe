@@ -63,7 +63,7 @@ exit 0
 				<key>destination_path</key>
 				<string>%RECIPE_CACHE_DIR%/unpack</string>
 				<key>flat_pkg_path</key>
-				<string>%RECIPE_CACHE_DIR%/unzip/DDPM_Installer.pkg</string>
+				<string>%found_filename%</string>
 				<key>purge_destination</key>
 				<true/>
 			</dict>
@@ -129,7 +129,7 @@ exit 0
 				<key>dmg_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
 				<key>dmg_root</key>
-				<string>%RECIPE_CACHE_DIR%/unzip</string>
+				<string>%found_filename%</string>
 			</dict>
 			<key>Processor</key>
 			<string>DmgCreator</string>
