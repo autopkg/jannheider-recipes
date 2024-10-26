@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comment</key>
+	<string>=== Info ===
+		Make one munki override for ARM and Intel, then change ARCH as you need.
+		aarch64 (Apple Silicon) or x86_64 (Intel)
+		also change supported_architectures as you need.
+		Apple Silicon is here the default
+	</string>
+	<key>Description</key>
+	<string>Downloads the latest version of RustDesk and imports it into Munki.</string>
+	<key>Identifier</key>
+	<string>com.github.jannheider.munki.RustDesk</string>
+	<key>Input</key>
+	<dict>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>RustDesk</string>
+		<key>ARCH</key>
+		<string>aarch64</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>description</key>
+			<string>An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.</string>
+			<key>developer</key>
+			<string>zhou huabing</string>
+			<key>display_name</key>
+			<string>RustDesk</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+			<key>supported_architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+		</dict>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>2.3</string>
+	<key>ParentRecipe</key>
+	<string>com.github.jannheider.download.RustDesk</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_path</key>
+				<string>%pathname%</string>
+				<key>repo_subdirectory</key>
+				<string>%MUNKI_REPO_SUBDIR%</string>
+			</dict>
+			<key>Processor</key>
+			<string>MunkiImporter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
