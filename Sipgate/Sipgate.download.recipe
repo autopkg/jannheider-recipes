@@ -21,7 +21,7 @@
 				<key>filename</key>
 				<string>%NAME%.dmg</string>
 				<key>url</key>
-				<string>https://sipgate-whitelabel-live.s3.eu-central-1.amazonaws.com/sipgate.dmg</string>
+				<string>https://sipgate-desktop-app.s3.eu-central-1.amazonaws.com/sipgate-softphone.dmg</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
@@ -34,7 +34,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_path</key>
-				<string>%pathname%/sipgate.app</string>
+				<string>%pathname%/sipgate softphone.app</string>
 				<key>requirement</key>
 				<string>identifier "com.sipgate.desktop" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = K4L4M6DD76</string>
 			</dict>
@@ -45,7 +45,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%pathname%/sipgate.app/Contents/Info.plist</string>
+				<string>%pathname%/sipgate softphone.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
 				<string>CFBundleShortVersionString</string>
 			</dict>
