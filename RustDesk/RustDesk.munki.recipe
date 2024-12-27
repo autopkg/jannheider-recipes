@@ -4,10 +4,13 @@
 <dict>
 	<key>Comment</key>
 	<string>=== Info ===
-		Make one munki override for ARM and Intel, then change ARCH as you need.
-		aarch64 (Apple Silicon) or x86_64 (Intel)
-		also change supported_architectures as you need.
-		Apple Silicon is here the default
+Make one munki override for ARM and Intel, then change ARCH as you need.
+
+Valid values for ARCH include:
+- "aarch64" (default, Apple Silicon)
+- "x86_64" (Intel)
+
+also change supported_architectures as you need.
 	</string>
 	<key>Description</key>
 	<string>Downloads the latest version of RustDesk and imports it into Munki.</string>
@@ -19,8 +22,6 @@
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
 		<string>RustDesk</string>
-		<key>ARCH</key>
-		<string>aarch64</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
