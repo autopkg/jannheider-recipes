@@ -3,7 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of awork.</string>
+	<string>Downloads the latest version of awork.
+	
+Valid values for ARCH include:
+- "x64" (default, Intel)
+- "arm64" (Apple Silicon)
+</string>
 	<key>Identifier</key>
 	<string>com.github.jannheider.download.awork</string>
 	<key>Input</key>
@@ -11,7 +16,7 @@
 		<key>NAME</key>
 		<string>awork</string>
 		<key>ARCH</key>
-		<string></string>
+		<string>x64</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
@@ -23,7 +28,7 @@
 				<key>filename</key>
 				<string>%NAME%.dmg</string>
 				<key>url</key>
-				<string>https://api.awork.io/api/v1/versions/electron/releases/download?platform=mac_%ARCH%</string>
+				<string>https://api.awork.com/api/v1/versions/electron/releases/download?platform=mac_%ARCH%</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
