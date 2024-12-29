@@ -4,9 +4,13 @@
 <dict>
 	<key>Comment</key>
 	<string>=== Info ===
-		Make one munki override for ARM and Intel, then change ARCH as you need.
-		arm64 (M1) or x64 (Intel)
-		also change supported_architectures as you need.
+Make one munki override for ARM and Intel, then change ARCH as you need.
+
+Valid values for ARCH include:
+- "x64" (default, Intel)
+- "arm64" (Apple Silicon)
+
+Also change supported_architectures as you need.
 	</string>
 	<key>Description</key>
 	<string>Downloads the latest version of awork and imports it into Munki.</string>
@@ -18,8 +22,6 @@
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
 		<string>awork</string>
-		<key>ARCH</key>
-		<string>arm64</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
@@ -38,7 +40,7 @@
 			<true/>
 			<key>supported_architectures</key>
 			<array>
-				<string>arm64</string>
+				<string>x86_64</string>
 			</array>
 		</dict>
 	</dict>
