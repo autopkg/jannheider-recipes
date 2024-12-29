@@ -28,7 +28,7 @@
 						<key>destination_path</key>
 						<string>/Applications</string>
 						<key>source_item</key>
-						<string>sipgate.app</string>
+						<string>sipgate softphone.app</string>
 					</dict>
 				</array>
 			</dict>
