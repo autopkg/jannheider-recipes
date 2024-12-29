@@ -3,7 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of RustDesk.</string>
+	<string>Downloads the latest version of RustDesk.
+	
+Valid values for ARCH include:
+- "aarch64" (default, Apple Silicon)
+- "x86_64" (Intel)
+</string>
 	<key>Identifier</key>
 	<string>com.github.jannheider.download.RustDesk</string>
 	<key>Input</key>
@@ -11,7 +16,7 @@
 		<key>NAME</key>
 		<string>RustDesk</string>
 		<key>ARCH</key>
-		<string></string>
+		<string>aarch64</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
