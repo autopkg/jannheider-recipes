@@ -4,14 +4,14 @@
 <dict>
     <key>Description</key>
     <string>Downloads the latest version of SketchUp (formerly SketchUp Pro) 2025 DE and imports into Munki.
-
+        
 Based on: com.github.dataJAR-recipes.munki.SketchUp 2025 EN
 
 Main changes are non-overridable year and locale.
 Removed superfluous CodeSignatureVerification from PKG.
-</string>
+    </string>
     <key>Identifier</key>
-    <string>com.github.jannheider.download.SketchUp 2025 DE</string>
+    <string>com.github.jannheider-recipes.download.SketchUp 2025 DE</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
