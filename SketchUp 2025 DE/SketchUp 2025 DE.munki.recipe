@@ -154,7 +154,7 @@ log_message "System-level SketchUp ${SKETCHUP_YEAR} cleanup process completed</s
      <key>MinimumVersion</key>
     <string>2.7</string>
     <key>ParentRecipe</key>
-    <string>com.github.jannheider-recipes.pkg.SketchUp 2025 EN</string>
+    <string>com.github.jannheider-recipes.pkg.SketchUp 2025 DE</string>
     <key>Process</key>
     <array>
         <dict>
