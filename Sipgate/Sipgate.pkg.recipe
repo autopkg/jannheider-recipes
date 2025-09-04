@@ -12,7 +12,7 @@
 		<string>sipgate</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>1.0.0</string>
+	<string>2.3</string>
 	<key>ParentRecipe</key>
 	<string>com.github.jannheider.download.sipgate</string>
 	<key>Process</key>
