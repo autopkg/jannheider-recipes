@@ -21,7 +21,7 @@
 				<key>filename</key>
 				<string>%NAME%.pkg</string>
 				<key>url</key>
-				<string>http://www.ireasoning.com/download/mibfree/mibbrowser.pkg</string>
+				<string>https://www.ireasoning.com/download/mibfree/mibbrowser.pkg</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
