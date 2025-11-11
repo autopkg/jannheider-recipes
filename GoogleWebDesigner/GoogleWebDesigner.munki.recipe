@@ -33,7 +33,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.jannheider.download.GoogleWebDesigner</string>
+	<string>com.github.peshay.download.GoogleWebDesigner</string>
 	<key>Process</key>
 	<array>
 		<dict>
