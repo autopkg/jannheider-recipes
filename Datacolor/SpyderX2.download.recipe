@@ -12,7 +12,7 @@
 		<string>Spyder X2</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>1.0.0</string>
+	<string>2.3</string>
 	<key>Process</key>
 	<array>
 		<dict>
@@ -53,7 +53,7 @@
 					<string>Apple Root CA</string>
 				</array>
 				<key>input_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/Spyder X2 6.0.1.pkg</string>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/SpyderX2_6.3.pkg</string>
 			</dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
@@ -64,7 +64,7 @@
 				<key>destination_path</key>
 				<string>%RECIPE_CACHE_DIR%/unpack</string>
 				<key>flat_pkg_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/Spyder X2 6.0.1.pkg</string>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/SpyderX2_6.3.pkg</string>
 				<key>purge_destination</key>
 				<true/>
 			</dict>

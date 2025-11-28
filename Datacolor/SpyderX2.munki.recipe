@@ -16,16 +16,17 @@
 		<dict>
 			<key>blocking_applications</key>
 			<array>
-				<string>Spyder X2 MQA.app</string>
 				<string>Spyder X2.app</string>
 				<string>SpyderUtility.app</string>
+				<string>Spyder X2 MQA.app</string>
+				<string>SpyderEngage.app</string>
 			</array>
 			<key>catalogs</key>
 			<array>
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string> </string>
+			<string></string>
 			<key>developer</key>
 			<string>Datacolor Inc.</string>
 			<key>display_name</key>
@@ -37,7 +38,7 @@
 		</dict>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>1.0.0</string>
+	<string>2.3</string>
 	<key>ParentRecipe</key>
 	<string>com.github.jannheider.download.SpyderX2</string>
 	<key>Process</key>
