@@ -47,7 +47,7 @@ Removed superfluous CodeSignatureVerification from PKG.
             <key>Arguments</key>
             <dict>
                 <key>re_pattern</key>
-                <string>href=\&quot;(https://download\.sketchup\.com/SketchUp-2026-([0-9]+(-[0-9]+)+)\.dmg)\&quot;</string>
+                <string>href=\&quot;(https://download\.sketchup\.com/SketchUp-2026-([0-9]+-[0-9]+-[0-9]+-[0-9]+)\.dmg)\&quot;</string>
                 <key>result_output_var_name</key>
                 <string>DOWNLOAD_URL</string>
                 <key>url</key>
