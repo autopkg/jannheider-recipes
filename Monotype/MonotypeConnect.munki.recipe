@@ -36,6 +36,38 @@ Set the DERIVE_MIN_OS variable to a non-empty string to set the minimum_os_versi
 			<string>Monotype Connect</string>
 			<key>name</key>
 			<string>%NAME%</string>
+			<key>postinstall_script</key>
+			<string>#!/bin/zsh --no-rcs
+#
+# Install plug-ins for Monotype Connect (formerly Extensis Connect)
+# https://help.monotype.com/connectsupport/s/article/installing-and-uninstalling-plug-ins-for-monotype-connect-from-the-command-line
+#
+# plugin-installer must be run as root; Munki runs postinstall scripts as root.
+
+for app in "/Applications/Monotype Connect.app" "/Applications/Extensis Connect.app"; do
+    if [[ -x "${app}/Contents/Resources/plugin-installer" ]]; then
+        PLUGIN_INSTALLER="${app}/Contents/Resources/plugin-installer"
+        break
+    fi
+done
+
+if [[ -z "${PLUGIN_INSTALLER}" ]]; then
+    echo "Error: plugin-installer not found in Monotype Connect or Extensis Connect"
+    exit 1
+fi
+
+echo "Installing Monotype Connect plugins using ${PLUGIN_INSTALLER}..."
+OUTPUT=$("${PLUGIN_INSTALLER}" --install-all 2&gt;&amp;1)
+echo "${OUTPUT}"
+
+# The exit code is not a reliable indicator; check the JSON result
+if echo "${OUTPUT}" | /usr/bin/grep -Eq '"succeeded"[[:space:]]*:[[:space:]]*true'; then
+    exit 0
+fi
+
+echo "Error: plugin-installer did not report success"
+exit 1
+</string>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
